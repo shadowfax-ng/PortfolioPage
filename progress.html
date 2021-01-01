@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="progress.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="skills">
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="100"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="100"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Javascript</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="80"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">PHP</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="70"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Tech-Support</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="80"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Graphic Design</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="80"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $('.skill-per').each(function () {
+            var $this = $(this);
+            var per = $this.attr('per');
+            $this.css("width", per + "%");
+        });
+        // $({ animatedValue: 0 }).animate({ animatedValue: per }, {
+        //     duration: 1000,
+        //     step: function () {
+        //         $this.attr('per', Math.floor(this.animatedValue) + '%');
+        //     },
+        //     complete: function () {
+        //         $this.attr('per', Math.floor(this.animatedValue) + '%');
+        //     }
+        // });
+    </script>
+</body>
+
+</html>
